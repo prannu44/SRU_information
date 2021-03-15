@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="email" table="x_594684_sru_student_information">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="" table="x_594684_sru_faculty">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes/>
         <audit>false</audit>
-        <calculation/>
-        <choice>0</choice>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Email</column_label>
+        <column_label/>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -22,15 +27,15 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>email</element>
+        <element/>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
-        <mandatory>true</mandatory>
+        <internal_type display_value="Collection">collection</internal_type>
+        <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <name>x_594684_sru_student_information</name>
+        <name>x_594684_sru_faculty</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -47,16 +52,16 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-03-11 09:37:09</sys_created_on>
-        <sys_id>b771790a2f3220101905bed72799b69f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Email</sys_name>
+        <sys_created_on>2021-03-15 05:11:30</sys_created_on>
+        <sys_id>ab0b15db2f3220101905bed72799b6db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_594684_sru_faculty</sys_name>
         <sys_package display_value="SRU" source="x_594684_sru">3bee69422f3220101905bed72799b6ab</sys_package>
         <sys_policy/>
         <sys_scope display_value="SRU">3bee69422f3220101905bed72799b6ab</sys_scope>
-        <sys_update_name>sys_dictionary_x_594684_sru_student_information_email</sys_update_name>
+        <sys_update_name>sys_dictionary_x_594684_sru_faculty_null</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-03-15 08:26:09</sys_updated_on>
+        <sys_updated_on>2021-03-15 05:11:30</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

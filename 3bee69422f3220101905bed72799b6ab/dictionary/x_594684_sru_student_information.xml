@@ -4,21 +4,27 @@
         <element label="Contact" max_length="40" name="contact" type="phone_number_e164"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="cse" display="true" label="Department" max_length="40" name="department" type="choice">
             <choice>
-                <element inactive_on_update="false" label="CIVIL" value="civil"/>
-                <element inactive_on_update="false" label="CSE" value="cse"/>
-                <element inactive_on_update="false" label="ECE" value="ece"/>
-                <element inactive_on_update="false" label="EEE" value="eee"/>
-                <element inactive_on_update="false" label="MECH" value="mech"/>
+                <element inactive_on_update="false" label="CIVIL" sequence="0" value="civil"/>
+                <element inactive_on_update="false" label="CSE" sequence="1" value="cse"/>
+                <element inactive_on_update="false" label="ECE" sequence="2" value="ece"/>
+                <element inactive_on_update="false" label="EEE" sequence="3" value="eee"/>
+                <element inactive_on_update="false" label="MECH" sequence="4" value="mech"/>
+                <element inactive_on_update="false" label="other" sequence="5" value="other"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Dob" max_length="40" name="dob" type="glide_date"/>
-        <element attributes="edge_encryption_enabled=true" label="Email" max_length="40" name="email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="email" type="string"/>
+        <element label="hodname" max_length="32" name="hodname" reference="sys_user" type="reference"/>
         <element label="Image" max_length="40" name="image" type="user_image"/>
         <element attributes="edge_encryption_enabled=true" label="Name of student" max_length="40" name="name_of_student" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Roll no" max_length="40" name="roll_no" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element attributes="edge_encryption_enabled=true" label="block no" mandatory="true" max_length="40" name="u_string_1" type="string"/>
         <index name="index">
+            <element name="hodname"/>
+        </index>
+        <index name="index2">
             <element name="sys_class_name"/>
         </index>
     </element>
